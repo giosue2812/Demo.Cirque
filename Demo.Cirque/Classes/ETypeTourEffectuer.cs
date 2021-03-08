@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Demo.Cirque.Classes
 {
-    public enum ETourEffectuer
+    public enum ETypeTourEffectuer
     {
         Acrobatie,
         Musique

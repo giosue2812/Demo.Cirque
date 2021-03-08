@@ -12,22 +12,20 @@ namespace Demo.Cirque.Classes
         {
             Nom = nom;
         }
-        public string ExecuterTours(Singe singe,Spectateur spectateur)
+        public void ExecuterTours(Singe singe,Spectateur spectateur)
         {
-            string reaction = default;
             foreach(string item in singe.ToursAcrobaties)
             {
                 Console.WriteLine("Le singe {0} acompli l'accrobatie {1}",singe.Nom, item);
-                spectateur.Applaudir(singe, item, ETourEffectuer.Acrobatie);
+                spectateur.Applaudir(singe, item, ETypeTourEffectuer.Acrobatie);
             }
             Console.WriteLine("________________________");
             foreach (string item in singe.ToursMusiques)
             {
                 Console.WriteLine("Le singe {0} joue de la musique avec {1}",singe.Nom,item);
-                spectateur.Applaudir(singe, item, ETourEffectuer.Musique);
+                spectateur.Applaudir(singe, item, ETypeTourEffectuer.Musique);
             }
             Console.WriteLine("________________________");
-            return reaction;
         }
     }
 }

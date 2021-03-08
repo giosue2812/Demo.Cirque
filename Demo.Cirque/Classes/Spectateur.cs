@@ -6,9 +6,9 @@ namespace Demo.Cirque.Classes
 {
     public class Spectateur
     {
-        public void Applaudir(Singe singe, string tour,ETourEffectuer tourEffectuer)
+        public void Applaudir(Singe singe, string tour,ETypeTourEffectuer eTypeTourEffectuer)
         {
-            if(tourEffectuer == ETourEffectuer.Acrobatie)
+            if(eTypeTourEffectuer == ETypeTourEffectuer.Acrobatie)
             {
                 Console.WriteLine($"      Le specteteur applaudit pendant le tour du {tour} de {singe.Nom}");
             }
